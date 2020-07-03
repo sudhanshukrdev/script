@@ -41,7 +41,7 @@ curl_close($ch);
     <meta charset="utf-8">
     <title>Developer Test</title>
     <meta name="description" content="The developer test">
-    <meta name="author" content="SitePoint">
+    <meta name="author" content="Cedcoss">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
