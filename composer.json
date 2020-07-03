@@ -1,0 +1,10 @@
+{
+    "name": "test/dev-test",
+    "authors": [
+        {
+            "name": "sudhanshu",
+            "email": "sudhanshukumarrai@cedcoss.com"
+        }
+    ],
+    "require": {}
+}
