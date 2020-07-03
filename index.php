@@ -29,10 +29,8 @@ if (curl_errno($ch)) {
     print 'There was some error in fetching details, Please try again later. Error code :' . curl_error($ch);
     return;
 }
-
 $moviesResult = json_decode(curl_exec($ch));
 curl_close($ch);
-
 
 ?>
 
