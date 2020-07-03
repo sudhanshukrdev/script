@@ -66,7 +66,12 @@ curl_close($ch);
                         <div class="movie-details">
                             <p>Imdb ID : <?php print $movie->imdbID ?></p>
                             <p>Year : <?php print $movie->Year ?></p>
-                            <p>First : <?php print substr($movie->Title, 0, strpos($movie->Title, ' ')) ?></p>
+                            <p>First :
+                                <?php
+                                $index = strpos($movie->Title, ' ');
+                                print $index ? substr($movie->Title, 0, $index) : $movie->Title
+                                ?>
+                            </p>
                         </div>
                     </div>
                 </div>
