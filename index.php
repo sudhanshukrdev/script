@@ -50,10 +50,10 @@ curl_close($ch);
 <body>
     <div class="form-container">
         <select id="select" name="search" class="dropdown">
-            <option value="red" <?php print $_GET['search'] === 'red' ? 'selected' : '' ?>>Red</option>
-            <option value="green" <?php print $_GET['search'] === 'green' ? 'selected' : '' ?>>Green</option>
-            <option value="blue" <?php print $_GET['search'] === 'blue' ? 'selected' : '' ?>>Blue</option>
-            <option value="yellow" <?php print $_GET['search'] === 'yellow' ? 'selected' : '' ?>>Yellow</option>
+            <option value="red" <?php print $searchValue === 'red' ? 'selected' : '' ?>>Red</option>
+            <option value="green" <?php print $searchValue === 'green' ? 'selected' : '' ?>>Green</option>
+            <option value="blue" <?php print $searchValue === 'blue' ? 'selected' : '' ?>>Blue</option>
+            <option value="yellow" <?php print $searchValue === 'yellow' ? 'selected' : '' ?>>Yellow</option>
         </select>
     </div>
     <?php if (isset($moviesResult->Response) && $moviesResult->Response == 'True') { ?>
